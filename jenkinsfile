@@ -1,5 +1,5 @@
 pipeline {
-    agent {
+    agent { label 'slave' }
     /* Slave resembles the server on which the job will be build on */
     stages {
          stage('Clone repository') {
