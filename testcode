@@ -1,3 +1,13 @@
-import pandas
-var = collins
-print (var)
+pipeline {
+     agent {
+        node 172.31.81.206
+        }
+     Stages {
+        stage('Install') {
+          steps {
+          Install apache2
+        }
+       }
+     }
+   }
+}
